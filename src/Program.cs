@@ -13,7 +13,7 @@ namespace MyTestApp
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run(); break the build again;
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
