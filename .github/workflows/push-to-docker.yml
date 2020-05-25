@@ -24,13 +24,13 @@ jobs:
       uses: docker/build-push-action@v1.1.0
       with:
         # Username used to log in to a Docker registry. If not set then no login will occur
-        #username: # optional
+        username: maxhorstmann # optional
         # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
-        #password: # optional
+        password: ${{ secrets.DOCKER_HUB_TOKEN }} # optional
         # Server address of Docker registry. If not set then will default to Docker Hub
         #registry: # optional
         # Docker repository to tag the image with
-        #repository: 
+        repository: maxhorstmann/GitHubActionsTest
         # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
         #tags: # optional
         # Automatically tags the built image with the git reference as per the readme
@@ -54,4 +54,4 @@ jobs:
         # Adds labels with git repository information to the built image
         #add_git_labels: # optional
         # Whether to push the image
-        push: false # optional, default is true
+        push: true # optional, default is true
