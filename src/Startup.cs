@@ -15,7 +15,7 @@ namespace MyTestApp
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            Configuration = configuration; BREAK THE BUILD!
         }
 
         public IConfiguration Configuration { get; }
