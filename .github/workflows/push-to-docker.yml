@@ -18,5 +18,4 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_TOKEN }}
         registry: https://registry.hub.docker.com
         repository: maxhorstmann/githubactionstest
-        tags: latest
         push: true 
